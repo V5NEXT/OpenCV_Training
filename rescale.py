@@ -18,8 +18,15 @@ def rescaleFrame(frame, scale=0.75):
 
     return cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
 
+# Changing resolution for live videos
+
+
+def changeRes(width, height):
+    capture.set(3, width)
+    capture.set(4, height)
 
 # reading videos
+
 
 capture = cv.VideoCapture('Videos/dog.mp4')
 
