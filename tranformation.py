@@ -1,3 +1,4 @@
+from turtle import width
 import cv2 as cv
 import numpy as np
 
@@ -17,5 +18,22 @@ def translate(img, x, y):
 translated = translate(img, 100, 200)
 cv.imshow("Translated Image", translated)
 
+
+# rotate an image
+
+def rotate(img, angle, rotPoint=None):
+    (height, width) = img.shape[:2]
+
+    if rotPoint is None:
+        rotPoint = (width//2, height//2)
+
+    rotMat = cv.getRotationMatrix2D(rotPoint, angle, 1.0)
+    dimensions = (width, height)
+
+    return cv.warpAffine(img, rotMat, dimensions)
+
+
+rotated = rotate(img, 25)
+cv.imshow("Rotated", rotated)
 
 cv.waitKey(0)
