@@ -4,7 +4,7 @@ img = cv.imread("Photos/lady.jpg")
 
 cv.imshow("City", img)
 
-# BGE to Grey Scale
+# BGR to Grey Scale
 
 grey = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow("Gray Scale", grey)
