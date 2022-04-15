@@ -27,6 +27,7 @@ cv.imshow("Canny Edges", canny)
 # Finding the contours
 
 contours, hierachies = cv.findContours(
+
     canny, cv.RETR_LIST, cv.CHAIN_APPROX_NONE)
 
 print(f'{len(contours)} contours in the image')
