@@ -18,7 +18,7 @@ cv.imshow("bitwise and", bitwise_and)
 bitwise_or = cv.bitwise_or(rectangle, circle)
 cv.imshow("bitwise Or", bitwise_or)
 
-bitwise_no = cv.bitwise_not(rectangle, circle)
+bitwise_no = cv.bitwise_not(rectangle)
 cv.imshow("bitwise not", bitwise_no)
 
 # good for non intesection regions
