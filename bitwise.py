@@ -12,14 +12,14 @@ cv.imshow("Rectangle", rectangle)
 cv.imshow("Circle", circle)
 
 
-# bitwise_and = cv.bitwise_and(rectangle, circle)
-# cv.imshow("bitwise and", bitwise_and)
+bitwise_and = cv.bitwise_and(rectangle, circle)
+cv.imshow("bitwise and", bitwise_and)
 
-# bitwise_or = cv.bitwise_or(rectangle, circle)
-# cv.imshow("bitwise Or", bitwise_or)
+bitwise_or = cv.bitwise_or(rectangle, circle)
+cv.imshow("bitwise Or", bitwise_or)
 
-# bitwise_no = cv.bitwise_not(rectangle, circle)
-# cv.imshow("bitwise not", bitwise_no)
+bitwise_no = cv.bitwise_not(rectangle, circle)
+cv.imshow("bitwise not", bitwise_no)
 
 # good for non intesection regions
 bitwise_xor = cv.bitwise_xor(rectangle, circle)
