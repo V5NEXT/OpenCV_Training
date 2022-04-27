@@ -9,4 +9,4 @@ Self Training using OpenCv
 -Gradiants 
 -Histograms
 
-Refrences : Free Code Camp 
+Refrences : Free Code Camp Training video
